@@ -4,6 +4,24 @@
 
 ---
 
+## Academic Background
+
+This project was built as a capstone application of concepts from the **[UT Austin AI & Machine Learning](https://onlineexeced.mccombs.utexas.edu/online-ai-machine-learning-course)** program (McCombs School of Business, 23-week executive program).
+
+Specific modules applied:
+
+| Module | Concept Applied |
+|--------|----------------|
+| **Course 03 — Generative AI for NLP** | Prompt engineering — the Jinja2 CoT prompt builder is a direct application of systematic prompt design taught in the course, structuring prompts to elicit reliable, structured outputs |
+| **Course 03 — Generative AI for NLP** | LLM API usage and understanding model reasoning capabilities that make chain-of-thought evaluation possible |
+| **Course 04 — Agentic AI for Automation** | Multi-step reasoning and tool use — the judge pipeline reasons step-by-step before scoring, mirroring the agentic reasoning loop taught in Course 04 |
+| **Course 04 — Agentic AI for Automation** | Parallelized LLM calls via `asyncio.gather` — the async agent execution pattern taught for building efficient agentic workflows |
+| **Pre-Work — Generative AI Landscape** | Strategic judgment for evaluating AI outputs — the course outcome this project directly operationalizes into a reusable tool |
+
+The course's **prompt engineering module** in Course 03 was the direct inspiration: after learning how to write effective prompts, the natural next step is building infrastructure to *verify* that your prompts produce consistently good outputs. G-Eval turns that insight into a systematic evaluation framework.
+
+---
+
 ## What Is This?
 
 **G-Eval** is a technique from the paper *"G-Eval: NLG Evaluation Using GPT-4 with Better Human Alignment"* (Liu et al., 2023). The core insight: instead of writing rule-based metrics for LLM output quality (which are brittle and domain-specific), ask a capable LLM to evaluate the output using a structured rubric — and make it reason step-by-step (chain-of-thought) before scoring, which dramatically improves alignment with human judgments.
