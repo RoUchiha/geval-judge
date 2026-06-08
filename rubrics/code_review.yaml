@@ -1,0 +1,18 @@
+name: "Code Review"
+dimensions:
+  - name: correctness
+    description: "Is the code logically correct? Does it solve the stated problem without obvious bugs or edge-case failures?"
+    scale: 1-5
+    weight: 2.0
+  - name: readability
+    description: "Is the code easy to read and understand? Are variable names descriptive, is the structure clear, and is complexity minimized?"
+    scale: 1-5
+    weight: 1.0
+  - name: security
+    description: "Does the code avoid common security vulnerabilities such as injection, insecure deserialization, hardcoded secrets, or improper error handling?"
+    scale: 1-5
+    weight: 2.0
+  - name: efficiency
+    description: "Is the code reasonably efficient? Does it avoid obviously wasteful operations like N+1 queries, unnecessary re-computation, or excessive memory use?"
+    scale: 1-5
+    weight: 1.0

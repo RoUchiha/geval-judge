@@ -1,0 +1,14 @@
+name: "Response Quality"
+dimensions:
+  - name: coherence
+    description: "Is the response logically structured, clear, and easy to follow? Does it flow naturally from one point to the next without contradictions?"
+    scale: 1-5
+    weight: 1.0
+  - name: groundedness
+    description: "Are all factual claims in the response explicitly supported by the provided context? Does the response avoid introducing information not found in the source?"
+    scale: 1-5
+    weight: 1.5
+  - name: helpfulness
+    description: "Does the response directly and completely address the user's question? Is it actionable and practically useful?"
+    scale: 1-5
+    weight: 1.0
